@@ -60,3 +60,76 @@ CREATE TABLE lease_contracts(
     FOREIGN KEY (Customer_ID) REFERENCES customers (Customer_ID),
     FOREIGN KEY (VIN) REFERENCES vehicles (VIN)
 );
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('3FADP4EJ4CM102527', 2015, 'Nissan', 'Versa', 'Car', 'Blue', 43090, 12300.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('3GNAL2EK6DS637014', 2024, 'Volkswagen', 'Golf', 'Car', 'White', 15, 35300.00, false);
+
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1FDWE37S1WHB59233', 2016, 'BMW', 'Z4', 'Car', 'White', 24090, 26590.00, false);
+
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1HGCM82633A123456', 2018, 'Honda', 'Civic', 'Car', 'Red', 30210, 15700.00, true);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('2T1BU4EE9DC234567', 2020, 'Toyota', 'Corolla', 'Car', 'Black', 12234, 18450.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('5YJSA1CN5DF345678', 2019, 'Tesla', 'Model S', 'Car', 'Silver', 54000, 45000.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('4T1BE46KX6U456789', 2015, 'Ford', 'Focus', 'Car', 'Blue', 68900, 9300.00, true);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1FTFX1EV9K1234567', 2022, 'Chevrolet', 'Silverado', 'Truck', 'Black', 10025, 37900.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('3C6UR5DLXKG123890', 2023, 'Ram', '1500', 'Truck', 'Red', 35, 42000.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1J4FY29P7YP345123', 2012, 'Jeep', 'Wrangler', 'SUV', 'Green', 134500, 17500.00, true);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('5NPE24AF2FH098765', 2017, 'Hyundai', 'Elantra', 'Car', 'Blue', 48900, 12300.00, true);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('2C4RC1BG9KR246800', 2021, 'Chrysler', 'Pacifica', 'Van', 'White', 12000, 28900.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1FTPW14VX5KC12389', 2018, 'Ford', 'F-150', 'Truck', 'Silver', 82300, 24500.00, true);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('KM8JU3AG3EU673542', 2023, 'Kia', 'Sportage', 'SUV', 'Gray', 4200, 31400.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1FVACYBS8GH891234', 2020, 'Freightliner', 'Sprinter', 'Van', 'Black', 34000, 42000.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('2FMPK4J89HBC45612', 2019, 'Ford', 'Edge', 'SUV', 'Blue', 20000, 29500.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('JHMCM82633C918273', 2016, 'Acura', 'TLX', 'Car', 'White', 45000, 22000.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1GKKVNED6EJ098654', 2017, 'GMC', 'Terrain', 'SUV', 'Silver', 67000, 19000.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('5TFDW5F15EX762349', 2022, 'Toyota', 'Tundra', 'Truck', 'White', 5000, 41900.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('2GNFLGEK6JH123456', 2021, 'Chevrolet', 'Equinox', 'SUV', 'Black', 15000, 26500.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('3CZRM3H58FG112233', 2018, 'Honda', 'CR-V', 'SUV', 'Green', 36000, 18900.00, true);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1FTNE1ZM9FKA56789', 2023, 'Ford', 'Transit', 'Van', 'Silver', 1200, 38900.00, false);
+
+INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
+VALUES('1FMCU9GD7JUC45678', 2020, 'Ford', 'Escape', 'SUV', 'Red', 28000, 21500.00, false);
+
+
