@@ -132,4 +132,15 @@ VALUES('1FTNE1ZM9FKA56789', 2023, 'Ford', 'Transit', 'Van', 'Silver', 1200, 3890
 INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
 VALUES('1FMCU9GD7JUC45678', 2020, 'Ford', 'Escape', 'SUV', 'Red', 28000, 21500.00, false);
 
+-- Dealerships:
+
+INSERT INTO dealerships(Dealership_ID, Dealership_Name, Address, phone)
+Values(0001, 'Aarons Auto', '235 Gamemaster Dr, Pgh PA 15212', '412-867-5309');
+
+INSERT INTO dealerships(Dealership_ID, Dealership_Name, Address, phone)
+Values(0002, 'Cool Cars By Carmen', '1313 Slasher St, Orlando FL 32724', '412-555-5523');
+
+INSERT INTO dealerships(Dealership_ID, Dealership_Name, Address, phone)
+Values(0003, 'Ekrems Excellent Deals', '420 Year Up Ave, PGH PA 15209', '724-111-1111');
+
 
