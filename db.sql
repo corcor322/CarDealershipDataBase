@@ -61,6 +61,8 @@ CREATE TABLE lease_contracts(
     FOREIGN KEY (VIN) REFERENCES vehicles (VIN)
 );
 
+-- Vehicles:
+
 INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
 VALUES('3FADP4EJ4CM102527', 2015, 'Nissan', 'Versa', 'Car', 'Blue', 43090, 12300.00, false);
 
@@ -142,5 +144,78 @@ Values(0002, 'Cool Cars By Carmen', '1313 Slasher St, Orlando FL 32724', '412-55
 
 INSERT INTO dealerships(Dealership_ID, Dealership_Name, Address, phone)
 Values(0003, 'Ekrems Excellent Deals', '420 Year Up Ave, PGH PA 15209', '724-111-1111');
+
+-- Inventory:
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '3FADP4EJ4CM102527');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, '3GNAL2EK6DS637014');
+
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0003, '1FDWE37S1WHB59233');
+
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '1HGCM82633A123456');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, '2T1BU4EE9DC234567');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0003, '5YJSA1CN5DF345678');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '4T1BE46KX6U456789');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, '1FTFX1EV9K1234567');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0003, '3C6UR5DLXKG123890');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '1J4FY29P7YP345123');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, '5NPE24AF2FH098765');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0003, '2C4RC1BG9KR246800');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '1FTPW14VX5KC12389');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, 'KM8JU3AG3EU673542');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0003, '1FVACYBS8GH891234');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '2FMPK4J89HBC45612');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, 'JHMCM82633C918273');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0003, '1GKKVNED6EJ098654');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '5TFDW5F15EX762349');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, '2GNFLGEK6JH123456');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0003, '3CZRM3H58FG112233');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0001, '1FTNE1ZM9FKA56789');
+
+INSERT INTO inventory(Dealership_ID, VIN)
+VALUES(0002, '1FMCU9GD7JUC45678');
 
 
