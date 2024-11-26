@@ -1,4 +1,5 @@
 CREATE DATABASE cardealership;
+CREATE DATABASE cardealership;
 
 CREATE TABLE dealerships(
     Dealership_ID int auto_increment NOT NULL,
@@ -8,24 +9,16 @@ CREATE TABLE dealerships(
     PRIMARY KEY (Dealership_ID)
 );
 
-CREATE TABLE customers(
-    Customer_ID int,
-    Customer_LastName varchar(50),
-    Customer_FirstName varchar(50),
-    Customer_email varchar(50),
-    Customer_phone varchar(12),
-    PRIMARY KEY (Customer_ID)
-);
 
 CREATE TABLE vehicles(
-    VIN varchar(20),
-    VehicleYear int,
-    Make varchar(20),
-    Model varchar(20),
-    VehicleType varchar(15),
-    Color varchar(15),
-    Odometer int,
-    Price float,
+    VIN varchar(20)  NOT NULL,
+    VehicleYear int NOT NULL,
+    Make varchar(20) NOT NULL,
+    Model varchar(20) NOT NULL,
+    VehicleType varchar(15) NOT NULL,
+    Color varchar(15) NOT NULL,
+    Odometer int NOT NULL,
+    Price float NOT NULL,
     SOLD boolean,
     PRIMARY KEY (VIN)
 );
@@ -38,26 +31,17 @@ CREATE TABLE inventory(
 );
 
 CREATE TABLE sales_contracts(
-    SalesContract_number int,
-    Customer_ID int,
-    Contract_Date varchar(10),
-    VIN varchar(20),
-    Financing boolean,
-    Total_Cost float,
-    Montly_Payment float,
-    PRIMARY KEY (SalesContract_number),
-    FOREIGN KEY (Customer_ID) REFERENCES customers (Customer_ID),
-    FOREIGN KEY (VIN) REFERENCES vehicles (VIN)
-);
-
-CREATE TABLE lease_contracts(
-    LeaseContract_number int,
-    Customer_ID int,
-    VIN varchar(20),
-    Total_Cost float,
+    SalesContract_number int auto_increment NOT NULL,
+    Customer_LastName varchar(50) NOT NULL,
+    Customer_FirstName varchar(50) NOT NULL,
+    Customer_Phone varchar(12) NOT NULL,
+    Customer_Email varchar(50),
+    Contract_Date varchar(10) NOT NULL,
+    VIN varchar(20) NOT NULL,
+    Financing boolean NOT NULL,
+    Total_Cost float NOT NULL,
     Monthly_Payment float,
-    PRIMARY KEY (LeaseContract_number),
-    FOREIGN KEY (Customer_ID) REFERENCES customers (Customer_ID),
+    PRIMARY KEY (SalesContract_number),
     FOREIGN KEY (VIN) REFERENCES vehicles (VIN)
 );
 
@@ -126,7 +110,7 @@ INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer
 VALUES('2GNFLGEK6JH123456', 2021, 'Chevrolet', 'Equinox', 'SUV', 'Black', 15000, 26500.00, false);
 
 INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
-VALUES('3CZRM3H58FG112233', 2018, 'Honda', 'CR-V', 'SUV', 'Green', 36000, 18900.00, true);
+VALUES('3CZRM3H58FG112233', 2018, 'Honda', 'CR-V', 'SUV', 'Green', 36000, 18900.00, false);
 
 INSERT INTO vehicles(VIN, VehicleYear, Make, Model, VehicleType, Color, Odometer, Price, SOLD)
 VALUES('1FTNE1ZM9FKA56789', 2023, 'Ford', 'Transit', 'Van', 'Silver', 1200, 38900.00, false);
@@ -217,5 +201,22 @@ VALUES(0001, '1FTNE1ZM9FKA56789');
 
 INSERT INTO inventory(Dealership_ID, VIN)
 VALUES(0002, '1FMCU9GD7JUC45678');
+
+-- Sales Contracts:
+
+INSERT INTO sales_contracts(SalesContract_number, Customer_LastName, Customer_FirstName, Customer_Phone, Customer_Email, Contract_Date, VIN, Financing, Total_Cost, Monthly_Payment)
+VALUES(000000001, 'Fine', 'Madelyn', '386-215-2299', 'matyfine@gmail.com', '09/10/2020', '1HGCM82633A123456', False, 15700.00, 0);
+
+INSERT INTO sales_contracts(SalesContract_number, Customer_LastName, Customer_FirstName, Customer_Phone, Customer_Email, Contract_Date, VIN, Financing, Total_Cost, Monthly_Payment)
+VALUES(000000002, 'Gojo', 'Satoru', '412-369-4800', 'thestr0ng3$t@hotmail.com', '11/11/2020', '4T1BE46KX6U456789', False, 9300.00, 0);
+
+INSERT INTO sales_contracts(SalesContract_number, Customer_LastName, Customer_FirstName, Customer_Phone, Customer_Email, Contract_Date, VIN, Financing, Total_Cost, Monthly_Payment)
+VALUES(000000003, 'M', 'Raymond', '724-123-4567', 'pluralpotato@gmail.com', '03/22/2021', '1J4FY29P7YP345123', False, 17500.00, 0);
+
+INSERT INTO sales_contracts(SalesContract_number, Customer_LastName, Customer_FirstName, Customer_Phone, Customer_Email, Contract_Date, VIN, Financing, Total_Cost, Monthly_Payment)
+VALUES(000000004, 'Butcher', 'Maven', '123-456-7890', 'cutestcat@yahoo.com', '08/10/2022', '5NPE24AF2FH098765', False, 12300.00, 0);
+
+INSERT INTO sales_contracts(SalesContract_number, Customer_LastName, Customer_FirstName, Customer_Phone, Customer_Email, Contract_Date, VIN, Financing, Total_Cost, Monthly_Payment)
+VALUES(000000005, 'Ieri', 'Shoko', '999-999-9999', 'hotdoc@gmail.com', '01/10/2024', '1FTPW14VX5KC12389', False, 15700.00, 0);
 
 
